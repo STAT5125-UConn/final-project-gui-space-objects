@@ -17,6 +17,9 @@ aniwidth = 300
         guiframe = tk.Frame(self, height = Height, width = Width)
         guiframe.pack(fill = "both", expand = true)
         canres = tk.Canvas(guiframe, background = "white", height = aniheight, width = aniwidth)
-        canres.place(relx = 0.25, rely = 0.25)
+        canres.place(relx = 0.25, rely = 0.125)
     end
 end
+
+app = Guiapp()
+app.mainloop()
