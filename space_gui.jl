@@ -26,6 +26,7 @@ aniwidth = 300
         mainlab.place(relx = 0.43, rely = 0.65)
 
         c1 = canres.create_oval(m1startx - r1, m1starty - r1, m1startx + r1, m1starty + r1)
+        c2 = canres.create_oval(m2startx - r2, m2starty - r2, m2startx + r2, m2starty + r2)
     end
 end
 
