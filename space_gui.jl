@@ -18,6 +18,8 @@ aniwidth = 300
         guiframe.pack(fill = "both", expand = true)
         canres = tk.Canvas(guiframe, background = "white", height = aniheight, width = aniwidth)
         canres.place(relx = 0.25, rely = 0.125)
+        mainlab = tk.Label(guiframe, text = "Input Parameters")
+        mainlab.place(relx = 0.43, rely = 0.65)
     end
 end
 
