@@ -6,6 +6,7 @@ inpar = Dict("mass1" => 0, "mass2" => 0, "r" => 2)
 time_delay = 0.01
 m1startx = 150
 m1starty = 150
+r1 = 45
 Height = 600
 Width = 600
 aniheight = 300
@@ -20,6 +21,8 @@ aniwidth = 300
         canres.place(relx = 0.25, rely = 0.125)
         mainlab = tk.Label(guiframe, text = "Input Parameters")
         mainlab.place(relx = 0.43, rely = 0.65)
+
+        c1 = canres.create_oval(m1startx - r1, m1starty - r1, m1startx + r1, m1starty + r1)
     end
 end
 
