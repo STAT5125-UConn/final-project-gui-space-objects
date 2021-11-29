@@ -24,6 +24,8 @@ aniwidth = 300
         canres.place(relx = 0.25, rely = 0.125)
         mainlab = tk.Label(guiframe, text = "Input Parameters")
         mainlab.place(relx = 0.43, rely = 0.65)
+        mainbutton = tk.Button(guiframe, text = "Run")
+        mainbutton.place(relx = 0.48, rely = 0.75)
 
         c1 = canres.create_oval(m1startx - r1, m1starty - r1, m1startx + r1, m1starty + r1)
         c2 = canres.create_oval(m2startx - r2, m2starty - r2, m2startx + r2, m2starty + r2)
