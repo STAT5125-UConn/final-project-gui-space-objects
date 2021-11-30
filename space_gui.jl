@@ -11,6 +11,7 @@ r1 = 45
 m2startx = 240
 m2starty = 150
 r2 = 24
+thetar = 2*mathmod.pi/50
 Height = 600
 Width = 600
 aniheight = 300
