@@ -1,6 +1,7 @@
 using PyCall
 tk = pyimport("tkinter")
 timemod = pyimport("time")
+mathmod = pyimport("math")
 
 inpar = Dict("mass1" => 0, "mass2" => 0, "r" => 2)
 time_delay = 0.01
