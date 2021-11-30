@@ -27,6 +27,10 @@ aniwidth = 300
         mainbutton = tk.Button(guiframe, text = "Run")
         mainbutton.place(relx = 0.48, rely = 0.75)
 
+        m1 = tk.StringVar()
+        m2 = tk.StringVar()
+        dist = tk.StringVar()
+
         c1 = canres.create_oval(m1startx - r1, m1starty - r1, m1startx + r1, m1starty + r1, fill = "blue")
         c2 = canres.create_oval(m2startx - r2, m2starty - r2, m2startx + r2, m2starty + r2, fill = "red")
     end
