@@ -45,7 +45,9 @@ aniwidth = 300
         c2 = canres.create_oval(m2startx - r2, m2starty - r2, m2startx + r2, m2starty + r2, fill = "red")
 
         function anidraw()
-            distin = distent.get()
+            distin = tryparse(Float64, distent.get())
+            m1in = tryparse(Float64, m1ent.get())
+            m2in = tryparse(Float64, m2ent.get())
             print(distin)
             canres.move(c2, 10, 0)
         end
