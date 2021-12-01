@@ -1,5 +1,4 @@
 using PyCall
-using Tk
 tk = pyimport("tkinter")
 timemod = pyimport("time")
 mathmod = pyimport("math")
