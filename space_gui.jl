@@ -4,6 +4,7 @@ timemod = pyimport("time")
 mathmod = pyimport("math")
 
 ainc = 2*mathmod.pi/50
+timeinc = 0.1
 
 inpar = Dict("mass1" => 0, "mass2" => 0, "r" => 2)
 time_delay = 0.01
@@ -40,7 +41,7 @@ aniwidth = 300
         c2 = canres.create_oval(m2startx - r2, m2starty - r2, m2startx + r2, m2starty + r2, fill = "red")
 
         function anidraw()
-            canres.move(c2, 10, 10)
+            canres.move(c2, 10, 0)
         end
 
         mainbutton = tk.Button(guiframe, text = "Run", command = anidraw)
