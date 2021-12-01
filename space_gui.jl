@@ -40,7 +40,7 @@ aniwidth = 300
         c2 = canres.create_oval(m2startx - r2, m2starty - r2, m2startx + r2, m2starty + r2, fill = "red")
 
         function anidraw()
-            print("a")
+            canres.move(c2, 10, 10)
         end
 
         mainbutton = tk.Button(guiframe, text = "Run", command = anidraw)
