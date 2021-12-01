@@ -49,7 +49,7 @@ aniwidth = 300
             m1in = tryparse(Float64, m1ent.get())
             m2in = tryparse(Float64, m2ent.get())
             print(distin)
-            canres.move(c2, 10, 0)
+            canres.coords(c2, m1startx + distin, 150)
         end
 
         mainbutton = tk.Button(guiframe, text = "Run", command = anidraw)
