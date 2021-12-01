@@ -37,14 +37,16 @@ aniwidth = 300
         m2ent = tk.Entry(guiframe, text = m2)
         distent = tk.Entry(guiframe, text = dist)
 
-        m1ent.place(relx = 0.3, rely = 0.7)
-        m2ent.place(relx = 0.45, rely = 0.7)
-        distent.place(relx = 0.6, rely = 0.7)
+        m1ent.place(relx = 0.1, rely = 0.7)
+        m2ent.place(relx = 0.4, rely = 0.7)
+        distent.place(relx = 0.7, rely = 0.7)
 
         c1 = canres.create_oval(m1startx - r1, m1starty - r1, m1startx + r1, m1starty + r1, fill = "blue")
         c2 = canres.create_oval(m2startx - r2, m2starty - r2, m2startx + r2, m2starty + r2, fill = "red")
 
         function anidraw()
+            distin = distent.get()
+            print(distin)
             canres.move(c2, 10, 0)
         end
 
