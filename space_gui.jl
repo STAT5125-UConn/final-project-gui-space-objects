@@ -51,6 +51,7 @@ aniwidth = 300
             print(canres.coords(c2))
             m2startxn = m1startx + distin
             canres.coords(c2, m2startxn - r2, m2starty - r2, m2startxn + r2, m2starty + r2)
+            vel = sqrt(6.673*10^(-11)*m1in/distin)
         end
 
         mainbutton = tk.Button(guiframe, text = "Run", command = anidraw)
