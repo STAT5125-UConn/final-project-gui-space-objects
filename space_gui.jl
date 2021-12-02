@@ -58,7 +58,6 @@ aniwidth = 300
             distin = tryparse(Float64, distent.get())
             m1in = tryparse(Float64, m1ent.get())
             m2in = tryparse(Float64, m2ent.get())
-            print(canres.coords(c2))
             m2startxn = m1startx + distin
             canres.coords(c2, m2startxn - r2, m2starty - r2, m2startxn + r2, m2starty + r2)
             gconst = 6.673*10^(-11)
