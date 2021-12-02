@@ -54,6 +54,7 @@ aniwidth = 300
             gconst = 6.673*10^(-11)
             vel = sqrt(gconst*m1in/distin)
             anglestart = ainc
+            timeorb = sqrt(4*(mathmod.pi^2)*(distin^3)/(gconst*m1in))
         end
 
         mainbutton = tk.Button(guiframe, text = "Run", command = anidraw)
