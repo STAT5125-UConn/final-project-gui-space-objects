@@ -44,10 +44,11 @@ aniwidth = 300
         c1 = canres.create_oval(m1startx - r1, m1starty - r1, m1startx + r1, m1starty + r1, fill = "blue")
         c2 = canres.create_oval(m2startx - r2, m2starty - r2, m2startx + r2, m2starty + r2, fill = "red")
 
-        function move_obj(xmove, xmove1, ymove, ymove1)
+        function move_obj(xmove, xmove1, ymove, ymove1, anglestart)
             canres.coords(c2, xmove1-xmove, ymove1-ymove)
             xmove = xmove1
             ymove = ymove1
+            anglestart = anglestart + ainc
         end
 
         function anidraw()
@@ -64,16 +65,9 @@ aniwidth = 300
             timect = timeinc
             xmove = distin
             ymove = 0
-            while timect < 2
-                timemod.sleep(timeinc)
-                xmove1 = distin*cos(anglestart)
-                ymove1 = distin*sin(anglestart)
-                canres.move(c2, xmove1 - xmove, ymove1 - ymove)
-                timect = timect + timeinc
-                xmove = xmove1
-                ymove = ymove1
-                anglestart = anglestart + ainc
-            end
+            xmove1 = distin*cos(anglestart)
+            ymove1 = distin*sin(anglestart)
+            canres.move(c2, xmove1 - xmove, ymove1 - ymove)
         end
 
         mainbutton = tk.Button(guiframe, text = "Run", command = anidraw)
