@@ -47,7 +47,7 @@ aniwidth = 300
 
         m1lab.place(relx = 0.15, rely = 0.66)
         m2lab.place(relx = 0.45, rely = 0.66)
-        distlab.place(relx = 0.73, rely = 0.66)
+        distlab.place(relx = 0.7, rely = 0.66)
 
         c1 = canres.create_oval(m1startx - r1, m1starty - r1, m1startx + r1, m1starty + r1, fill = "blue")
         c2 = canres.create_oval(m2startx - r2, m2starty - r2, m2startx + r2, m2starty + r2, fill = "red")
