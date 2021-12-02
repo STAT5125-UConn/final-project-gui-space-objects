@@ -47,7 +47,7 @@ aniwidth = 300
         function move_obj(xmove, xmove1, ymove, ymove1, anglestart, distin)
             xmove1 = distin*cos(anglestart)
             ymove1 = distin*sin(anglestart)
-            canres.coords(c2, xmove1-xmove, ymove1-ymove)
+            canres.move(c2, xmove1-xmove, ymove1-ymove)
             xmove = xmove1
             ymove = ymove1
             anglestart = anglestart + ainc
