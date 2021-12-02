@@ -4,7 +4,7 @@ timemod = pyimport("time")
 mathmod = pyimport("math")
 
 ainc = 2*mathmod.pi/50
-timeinc = 0.1
+timeinc = 0.04
 
 inpar = Dict("mass1" => 0, "mass2" => 0, "r" => 2)
 time_delay = 0.01
