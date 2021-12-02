@@ -51,6 +51,7 @@ aniwidth = 300
             xmove = xmove1
             ymove = ymove1
             anglestart = anglestart + ainc
+            canres.after(40, move_obj, xmove, xmove1, ymove, ymove1, anglestart, distin)
         end
 
         function anidraw()
