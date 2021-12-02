@@ -64,6 +64,9 @@ aniwidth = 300
                 ymove1 = distin*sin(anglestart)
                 canres.move(c2, xmove1 - xmove, ymove1 - ymove)
                 timect = timect + timeinc
+                xmove = xmove1
+                ymove = ymove1
+                anglestart = anglestart + ainc
             end
         end
 
