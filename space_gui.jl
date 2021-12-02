@@ -55,7 +55,12 @@ aniwidth = 300
             vel = sqrt(gconst*m1in/distin)
             anglestart = ainc
             timeo = sqrt(4*(mathmod.pi^2)*(distin^3)/(gconst*m1in))
-            while true
+            timect = timeinc
+            xmove = distin
+            ymove = 0
+            while timect < 2
+                xmove1 = distin*cos(anglestart)
+                ymove1 = distin*sin(anglestart)
                 timemod.sleep(timeinc)
             end
         end
