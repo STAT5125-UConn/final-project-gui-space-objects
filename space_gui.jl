@@ -41,6 +41,10 @@ aniwidth = 300
         m2ent.place(relx = 0.4, rely = 0.7)
         distent.place(relx = 0.7, rely = 0.7)
 
+        m1lab = tk.Label(guiframe, text = "Mass 1 (kg)")
+        m2lab = tk.Label(guiframe, text = "Mass 2 (kg)")
+        distlab = tk.Label(guiframe, text = "Distance (10^24 km)")
+
         c1 = canres.create_oval(m1startx - r1, m1starty - r1, m1startx + r1, m1starty + r1, fill = "blue")
         c2 = canres.create_oval(m2startx - r2, m2starty - r2, m2startx + r2, m2starty + r2, fill = "red")
 
