@@ -59,9 +59,11 @@ aniwidth = 300
             xmove = distin
             ymove = 0
             while timect < 2
+                timemod.sleep(timeinc)
                 xmove1 = distin*cos(anglestart)
                 ymove1 = distin*sin(anglestart)
-                timemod.sleep(timeinc)
+                canres.move(c2, xmove1 - xmove, ymove1 - ymove)
+                timect = timect + timeinc
             end
         end
 
