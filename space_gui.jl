@@ -60,7 +60,7 @@ aniwidth = 300
             xmove = xmove1
             ymove = ymove1
             anglestart = anglestart + ainc
-            function calcre
+            function calcre()
                 distin = tryparse(Float64, distent.get())
             end
             canres.after(40, move_obj, xmove, xmove1, ymove, ymove1, anglestart, distin)
