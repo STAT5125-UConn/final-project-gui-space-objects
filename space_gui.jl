@@ -62,6 +62,7 @@ aniwidth = 300
             anglestart = anglestart + ainc
             function calcre()
                 distin = tryparse(Float64, distent.get())
+                move_obj(xmove, xmove1, ymove, ymove1, anglestart, distin)
             end
             canres.after(40, move_obj, xmove, xmove1, ymove, ymove1, anglestart, distin)
             mainbutton.configure(text = "Recalculate", command = calcre)
