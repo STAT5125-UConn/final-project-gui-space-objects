@@ -53,7 +53,6 @@ aniwidth = 300
         c2 = canres.create_oval(m2startx - r2, m2starty - r2, m2startx + r2, m2starty + r2, fill = "red")
 
         function move_obj(xmove, xmove1, ymove, ymove1, anglestart, distin)
-            distin = tryparse(Float64, distent.get())
             xmove1 = distin*cos(anglestart)
             ymove1 = distin*sin(anglestart)
             canres.move(c2, xmove1-xmove, ymove1-ymove)
