@@ -22,6 +22,12 @@ aniwidth = 300
         mframe.pack(fill = "both", expand = true)
         mcan = tk.Canvas(self, background = "white", height = aniheight, width = aniwidth)
         mcan.pack(relx = 0.25, rely = 0.125)
+        mlabel = tk.Label(self, text = "Input Parameters")
+        mlabel.pack(relx = 0.43, rely = 0.62)
+
+        m1 = tk.StringVar()
+        m2 = tk.StringVar()
+        dist = tk.StringVar()
     end
 end
 
