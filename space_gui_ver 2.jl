@@ -51,6 +51,8 @@ aniwidth = 300
         function move_obj(xs, ys, angstart, distin)
             xs1 = distin*cos(angstart)
             ys1 = distin*sin(angstart)
+            mcan.move(o2, xs1-xs, ys1-ys)
+            angstart = angstart + piinc
         end
 
         function anidraw()
