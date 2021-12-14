@@ -55,6 +55,11 @@ aniwidth = 300
             angstart = angstart + piinc
             xs = xs1
             ys = ys1
+            function recalc()
+                mcan.after_cancel(aftervar)
+                anidraw()
+            end
+            aftervar = mcan.after(o2, move_obj, xs, ys, angstart, distin)
         end
 
         function anidraw()
