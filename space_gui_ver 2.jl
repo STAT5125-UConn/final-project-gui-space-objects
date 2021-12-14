@@ -53,6 +53,9 @@ aniwidth = 300
             m2in = tryparse(Float64, m2ent.get())
             distin = tryparse(Float64, distent.get())
         end
+
+        mbutton = tk.Button(mframe, text = "Run", command = anidraw)
+        mbutton.place(relx = 0.45, rely = 0.75)
     end
 end
 
