@@ -18,6 +18,8 @@ aniwidth = 300
 @pydef mutable struct Guispace <: tk.Tk
     __init__(self) = begin
         tk.Tk.__init__(self)
+        mframe = tk.Frame(self, height = heightf, width = widthf)
+        mframe.pack(fill = "both", expand = true)
     end
 end
 
