@@ -54,8 +54,12 @@ aniwidth = 300
             distin = tryparse(Float64, distent.get())
             m2sxnew = m1sx + distin
             mcan.delete(o2)
-            o2 = mcan.create_oval(m2sxnew - r2, m2sy - r2, m2sxnew + r2, m2sy + r2)
+            o2 = mcan.create_oval(m2sxnew - r2, m2sy - r2, m2sxnew + r2, m2sy + r2, fill = "red")
             gconst = 6.673*10^(-11)
+            angstart = piinc
+            xs = 0
+            ys = 0
+            move_obj(xs, ys, angstart, distin)
         end
 
         mbutton = tk.Button(mframe, text = "Run", command = anidraw)
