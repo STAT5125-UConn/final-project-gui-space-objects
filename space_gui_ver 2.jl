@@ -59,7 +59,8 @@ aniwidth = 300
                 mcan.after_cancel(aftervar)
                 anidraw()
             end
-            aftervar = mcan.after(o2, move_obj, xs, ys, angstart, distin)
+            aftervar = mcan.after(40, move_obj, xs, ys, angstart, distin)
+            mbutton.configure(text = "Recalculate", command = recalc)
         end
 
         function anidraw()
