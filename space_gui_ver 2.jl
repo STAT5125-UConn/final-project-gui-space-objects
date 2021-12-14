@@ -36,6 +36,10 @@ aniwidth = 300
         m1ent.place(relx = 0.1, rely = 0.7)
         m2ent.place(relx = 0.4, rely = 0.7)
         distent.place(relx = 0.7, rely = 0.7)
+
+        m1lab = tk.Label(mframe, text = "Mass 1 (kg)")
+        m2lab = tk.Label(mframe, text = "Mass 2 (kg)")
+        distlab = tk.Label(mframe, text = "Distance (10^23 km)")
     end
 end
 
