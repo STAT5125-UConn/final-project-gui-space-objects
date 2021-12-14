@@ -23,7 +23,7 @@ aniwidth = 300
         mcan = tk.Canvas(self, background = "white", height = aniheight, width = aniwidth)
         mcan.place(relx = 0.25, rely = 0.125)
         mlabel = tk.Label(self, text = "Input Parameters")
-        mlabel.place(relx = 0.43, rely = 0.62)
+        mlabel.place(relx = 0.43, rely = 0.63)
 
         m1 = tk.StringVar()
         m2 = tk.StringVar()
