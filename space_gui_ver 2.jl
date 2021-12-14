@@ -32,6 +32,10 @@ aniwidth = 300
         m1ent = tk.Entry(self, text = m1)
         m2ent = tk.Entry(self, text = m2)
         distent = tk.Entry(self, text = dist)
+
+        m1ent.place(relx = 0.1, rely = 0.7)
+        m2ent.place(relx = 0.4, rely = 0.7)
+        distent.place(relx = 0.7, rely = 0.7)
     end
 end
 
