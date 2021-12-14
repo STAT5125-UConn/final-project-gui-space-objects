@@ -10,6 +10,11 @@ m1sy = 150
 m2sx = 220
 m2sy = 150
 
+heightf = 600
+widthf = 600
+aniheight = 300
+aniwidth = 300
+
 @pydef mutable struct Guispace <: tk.Tk
     __init__(self) = begin
         tk.Tk.__init__(self)
