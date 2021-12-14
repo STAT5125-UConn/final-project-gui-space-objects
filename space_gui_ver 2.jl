@@ -44,6 +44,9 @@ aniwidth = 300
         m1lab.place(relx = 0.15, rely = 0.66)
         m2lab.place(relx = 0.45, rely = 0.66)
         distlab.place(relx = 0.71, rely = 0.66)
+
+        o1 = mcan.create_oval(m1sx - r1, m1sy - r1, m1sx + r1, m1sy + r1, fill = "blue")
+        o2 = mcan.create_oval(m2sx - r2, m2sy - r2, m2sx + r2, m2sy + r2, fill = "red")
     end
 end
 
