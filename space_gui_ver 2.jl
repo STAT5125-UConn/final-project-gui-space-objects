@@ -20,6 +20,8 @@ aniwidth = 300
         tk.Tk.__init__(self)
         mframe = tk.Frame(self, height = heightf, width = widthf)
         mframe.pack(fill = "both", expand = true)
+        mcan = tk.Canvas(self, background = "white", height = aniheight, width = aniwidth)
+        mcan.pack(relx = 0.25, rely = 0.125)
     end
 end
 
