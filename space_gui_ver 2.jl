@@ -28,6 +28,10 @@ aniwidth = 300
         m1 = tk.StringVar()
         m2 = tk.StringVar()
         dist = tk.StringVar()
+
+        m1ent = tk.Entry(self, text = m1)
+        m2ent = tk.Entry(self, text = m2)
+        distent = tk.Entry(self, text = dist)
     end
 end
 
