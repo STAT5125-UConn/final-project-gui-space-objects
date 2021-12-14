@@ -47,6 +47,12 @@ aniwidth = 300
 
         o1 = mcan.create_oval(m1sx - r1, m1sy - r1, m1sx + r1, m1sy + r1, fill = "blue")
         o2 = mcan.create_oval(m2sx - r2, m2sy - r2, m2sx + r2, m2sy + r2, fill = "red")
+
+        function anidraw()
+            m1in = tryparse(Float64, m1ent.get())
+            m2in = tryparse(Float64, m2ent.get())
+            distin = tryparse(Float64, distent.get())
+        end
     end
 end
 
