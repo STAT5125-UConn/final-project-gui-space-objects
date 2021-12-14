@@ -53,6 +53,8 @@ aniwidth = 300
             ys1 = distin*sin(angstart)
             mcan.move(o2, xs1-xs, ys1-ys)
             angstart = angstart + piinc
+            xs = xs1
+            ys = ys1
         end
 
         function anidraw()
