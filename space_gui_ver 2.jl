@@ -2,7 +2,7 @@ using PyCall
 tk = pyimport("tkinter")
 mathin = pyimport("math")
 
-piinc = mathin.pi/50
+piinc = 2*mathin.pi/50
 r1 = 45
 r2 = 24
 m1sx = 150
