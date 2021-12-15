@@ -71,6 +71,8 @@ aniwidth = 300
             mcan.delete(o2)
             o2 = mcan.create_oval(m2sxnew - r2, m2sy - r2, m2sxnew + r2, m2sy + r2, fill = "red")
             gconst = 6.673*10^(-11)
+            timeorbit = sqrt((4*mathin.pi*(distin*10^(23))^3)/(gconst*m1in))
+            print(timeorbit)
             angstart = piinc
             xs = distin
             ys = 0
